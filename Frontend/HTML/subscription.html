@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chaapless! - Meal Subscription</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"> -->
+  <link rel="stylesheet" href="/CSS/subscription.css">
+</head>
+<body>
+    
+    <!-- Header & Navigation -->
+  <header>
+    <nav>
+      <div class="logo">Chaapless!</div>
+      <ul class="nav-links">
+        <a href="/HTML/home.html">Home</a>
+        <a href="/HTML/subscription.html">Subscription</a>
+        <a href="/HTML/contact.html">Contact</a>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Subscription Plans -->
+  <!-- <section id="subscription-page" class="page hidden"> -->
+  <section id="subscription-page" class="page">
+    <h2>Choose Your Meal Plan</h2>
+    <p class="tagline">Khawa-teo Chaapless! Bhaba-teo Chaapless! Pocket-eo Chaapless!</p>
+    <div class="subs-plan-options">
+        <!-- <button id="subs-options" class="subs-options-btn">One Time Plan</button>  problem here in the structure -->
+        <button id="one-time-plan" class="subs-options-btn">One Time Plan</button>  <!-- problem here in the structure -->
+        <button id="weekly-plan" class="subs-options-btn">Weekly Plan</button> <!-- problem here in the structure -->
+        <button id="monthly-plan" class="subs-options-btn">Monthly Plan</button> <!-- problem here in the structure -->
+    </div>
+    <div class="meal-plan-options">
+      <button id="general-meal-plan" class="meal-plan-btn">General Meal Plan</button>
+      <button id="premium-meal-plan" class="meal-plan-btn">Premium Meal Plan</button>
+      <button id="custom-meal-plan" class="meal-plan-btn">Customize Meal Plan</button>
+    </div>
+
+    <!-- General Meal Plan Options -->
+    <div id="general-meal-options" class="hidden">
+        <h3>General Meal Plan</h3>
+        <p class="quote">(Authentic Bengali Homely food that will make you and your pocket Chaapless!)</p>
+        <div class="subscription-plans">
+          <!-- General Meal Plans -->
+          <div class="plan">
+            <h3>Veg Meal</h3>
+            <p>₹489/week (₹70/day)</p>
+            <p class="menu">Steamed Rice, Moog Dal, Jhuri Alu Bhaja, One Seasonal Sabji, Chatni & Papad</p>
+            <button class="select-plan" data-plan="489" data-plan-daily="70">Select</button>
+          </div>
+          <div class="plan">
+            <h3>Paneer Meal</h3>
+            <p>₹559/week (₹80/day)</p>
+            <p class="menu">Steamed Rice, Moog Dal, Jhuri Alu Bhaja, Paneer Masala, Chatni & Papad</p>
+            <button class="select-plan" data-plan="559" data-plan-daily="80">Select</button>
+          </div>
+          <div class="plan">
+            <h3>Chicken Meal</h3>
+            <p>₹649/week (₹93/day)</p>
+            <p class="menu">Steamed Rice, Moog Dal, Jhuri Alu Bhaja, Chicken Curry (2pcs With Alu), Chatni & Papad</p>
+            <button class="select-plan" data-plan="649" data-plan-daily="93">Select</button>
+          </div>
+          <div class="plan">
+            <h3>Mutton Meal</h3>
+            <p>₹999/week (₹142/day)</p>
+            <p class="menu">Steamed Rice, Moog Dal, Jhuri Alu Bhaja, Mutton Curry (2pcs With Alu), Chatni & Papad</p>
+            <button class="select-plan" data-plan="999" data-plan-daily="142">Select</button>
+          </div>
+          <div class="plan">
+            <h3>Egg Meal</h3>
+            <p>₹589/week (₹85/day)</p>
+            <p class="menu">Steamed Rice, Moog Dal, Jhuri Alu Bhaja, Egg Curry (1pc With Alu), Chatni & Papad</p>
+            <button class="select-plan" data-plan="589" data-plan-daily="85">Select</button>
+          </div>
+          <div class="plan">
+            <h3>Fish Meal</h3>
+            <p>₹649/week (₹93/day)</p>
+            <p class="menu">Steamed Rice, Moog Dal, Jhuri Alu Bhaja, Fish Curry (1pc- Rui/Bhola), Chatni & Papad</p>
+            <button class="select-plan" data-plan="649" data-plan-daily="93">Select</button>
+          </div>
+          <!-- <div class="plan">
+            <h3>Customized Meal</h3>
+            <p>Choose your meals</p>
+            <button class="select-plan" data-plan="custom">Select</button>
+          </div> -->
+        </div>
+      </div>
+  
+      <!-- Premium Meal Plan Options -->
+      <div id="premium-meal-options" class="hidden">
+        <h3>Premium Meal Plan</h3>
+        <p class="quote">(Authentic Bengali Homely food with much more variety to make you always feel Chaapless!)</p>
+        <div class="subscription-plans">
+          <!-- Premium Meal Plans -->
+          <div class="plan">
+            <h3>Veg Meal</h3>
+            <p>₹699/week (₹100/day)</p>
+            <p class="menu">Steamed Rice, Moog Dal, Jhuri Alu Bhaja, Two Seasonal Sabji (Premium), Chatni, Misti & Papad</p>
+            <button class="select-plan" data-plan="699" data-plan-daily="100">Select</button>
+          </div>
+          <div class="plan">
+            <h3>Paneer Meal</h3>
+            <p>₹839/week (₹120/day)</p>
+            <p class="menu">Steamed Rice, Moog Dal, Jhuri Alu Bhaja, One Seasonal Sabji (Premium), Paneer Masala, Chatni, Misti & Papad</p>
+            <button class="select-plan" data-plan="839" data-plan-daily="120">Select</button>
+          </div>
+          <div class="plan">
+            <h3>Chicken Meal</h3>
+            <p>₹979/week (₹140/day)</p>
+            <p class="menu">Steamed Rice, Moog Dal, Jhuri Alu Bhaja, One Seasonal Sabji (Premium), Chicken Curry (2pcs With Alu), Chatni, Misti & Papad</p>
+            <button class="select-plan" data-plan="979" data-plan-daily="140">Select</button>
+          </div>
+          <div class="plan">
+            <h3>Mutton Meal</h3>
+            <p>₹1399/week (₹200/day)</p>
+            <p class="menu">Steamed Rice, Moog Dal, Jhuri Alu Bhaja, One Seasonal Sabji (Premium), Mutton Curry (2pcs With Alu), Chatni, Misti & Papad</p>
+            <button class="select-plan" data-plan="1399" data-plan-daily="200">Select</button>
+          </div>
+          <div class="plan">
+            <h3>Egg Meal</h3>
+            <p>₹769/week (₹110/day)</p>
+            <p class="menu">Steamed Rice, Moog Dal, Jhuri Alu Bhaja, One Seasonal Sabji (Premium), Egg Curry (2pcs With Alu), Chatni, Misti & Papad</p>
+            <button class="select-plan" data-plan="769" data-plan-daily="110">Select</button>
+          </div>
+          <div class="plan">
+            <h3>Fish Meal</h3>
+            <p>₹999/week (₹142/day)</p>
+            <p class="menu">Steamed Rice, Moog Dal, Jhuri Alu Bhaja, One Seasonal Sabji (Premium), Fish Curry (1pc- Pabda/Pakka Katla), Chatni, Misti & Papad</p>
+            <button class="select-plan" data-plan="999" data-plan-daily="142">Select</button>
+          </div>
+          <!-- <div class="plan">
+            <h3>Customized Meal</h3>
+            <p>Choose your meals</p>
+            <button class="select-plan" data-plan="custom">Select</button>
+          </div> -->
+        </div>
+      </div>
+
+    <!-- Customized Meal Options -->
+    <div id="custom-meal-options" class="hidden">
+        <h3>Customize Your Meals</h3>
+        <p class="tagline">Khawa-teo Chaapless! Bhaba-teo Chaapless! Pocket-eo Chaapless!</p>
+        <label for="start-date">Select Start Date:</label>
+        <input type="text" id="start-date" placeholder="Select Date">
+  
+        <div id="weekday-meals" class="hidden">
+          <div id="meal-selection-container"></div>
+        </div>
+  
+        <label for="num-persons">Number of Persons (1-10):</label>
+        <input type="number" id="num-persons" min="1" max="10" value="1">
+  
+        <div class="cost-summary">
+          <p>Meal Cost: ₹<span id="meal-cost">0</span></p>
+          <p>GST (12%): ₹<span id="gst">0</span></p>
+          <!-- <p>Delivery Fee: ₹<span id="delivery-fee">140</span> <span id="delivery-discount">(₹20/Day)</span></p>
+          <p>Packaging & Handling Charges: ₹<span id="packaging-fee">38.50</span> <span id="packaging-discount">(₹5.50/Day)</span></p> -->
+          <p>Delivery Fee: ₹<span id="delivery-fee">140</span> <span id="delivery-discount"></span></p>
+          <p>Packaging & Handling Charges: ₹<span id="packaging-fee">38.50</span> <span id="packaging-discount"></span></p>
+          <p id="free-delivery" class="hidden">Free Delivery Availed!</p>
+          <p>Total Billed Amount: ₹<span id="total-billed-amount">0</span></p>
+        </div>
+  
+        <button id="proceed-to-payment">Proceed to Payment</button>
+    </div>
+  </section>
+
+  <!-- Total Bill Section -->
+  <section id="total-bill-page" class="page hidden">
+    <h2>Your Total Bill</h2>
+    <div class="bill-summary">
+
+      <p><strong>Number of Person:</strong> <span id="bill-num-person">1</span></p>   <!-- newly added -->
+      <label for="num-persons">Number of Persons (1-10):</label>
+      <input type="number" id="num-persons" min="1" max="10" value="1">
+
+
+
+      <p><strong>Meal Cost:</strong> ₹<span id="bill-meal-cost">0</span></p>
+      <p><strong>GST (12%):</strong> ₹<span id="bill-gst">0</span></p>
+      <p><strong>Delivery Fee:</strong> ₹<span id="bill-delivery-fee">0</span></p>
+      <p><strong>Packaging & Handling Charges:</strong> ₹<span id="bill-packaging-fee">38.50</span></p>
+      <p><strong>Total Billed Amount:</strong> ₹<span id="bill-total-amount">0</span></p>
+    </div>
+    <button id="confirm-payment">Confirm Payment</button>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-left">
+        <h3>Policies</h3>
+        <div class="policy-links">
+          <a href="/HTML/faq.html">FAQ</a>
+          <a href="/privacy">Return Policy</a>
+          <a href="/privacy">Refund Policy</a>
+          <a href="/privacy">Cancellation Policy</a>
+          <a href="/privacy">Privacy Policy</a>
+          <a href="/terms">Terms of Service</a>
+          <a href="/terms">Disclaimer</a>
+        </div>
+      </div>
+      
+      <div class="footer-right">
+        <h3>Contact Us</h3>
+        <div class="contact-info">
+          <p><i class="fas fa-phone"></i> +91 7602526098</p>
+          <p><i class="fas fa-envelope"></i> chaapless.sm@gmail.com</p>
+        </div>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/chaapless.official?utm_source=qr&igsh=MWI0ZXc1ODN3b2YydA==" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p class="copyright">© Copyright 2025 Chaapless!. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="/Javascript/subs.js"></script>
+</body>
+</html>
